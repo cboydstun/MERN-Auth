@@ -1,0 +1,56 @@
+#bioBox {
+    display: inline-block;
+}
+
+.bioText {
+    display: inline-block;
+    margin: auto;
+    text-align: left;
+    padding: 1.3rem 0rem;
+}
+
+#bioPic {
+    float: right;
+    max-height: 400px;
+    max-width: 200px;
+    min-height: 100px;
+    min-width: 50px;
+}
+
+.linkIcon {
+    float: left;
+    height: 100px;
+}
+
+#linkedInIcon {
+    padding: 1.3rem;
+}
+
+#gitHubIcon {
+    padding: 1.3rem;
+}
+
+/* @media screen and (max-width: 800px) {
+    #bioPic{
+        float: center;
+    }
+} */
+
+@media screen and (max-width: 800px) {
+    #bioBox{
+        margin: auto;
+        display: block;
+        width: auto;
+        padding: auto;
+        margin: 0 auto;
+
+    }
+    
+    #bioPic {
+        float: none;
+    }
+
+    .bioText {
+        padding: auto;
+    }
+}

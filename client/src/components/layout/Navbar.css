@@ -1,4 +1,4 @@
-main {
+container{
   align-content: center;
   box-sizing: border-box;
   /* display: grid; */
@@ -12,21 +12,17 @@ main {
   padding: 20px 0;
   text-align: center;
 }
-h1 {
-  font-size: 45px;
-}
-h2 {
-  margin-top: 1.5em;
-}
-p {
-  font-size: 16px;
-}
-/* a {
-  cursor: pointer;
-  text-decoration: none;
-  transition: all 0.2s ease;
-} */
-/* a:hover {
-  border-bottom: 1px solid #0076ff;
-} */
 
+#navBar {
+    background-color: lightgrey;
+    display: flex;    
+    width: 900px;
+
+}
+
+#navBarLink {
+    text-align: center;
+    font-size: 10px;
+    color: lightgrey;
+
+}
