@@ -1,11 +1,10 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
 
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { logoutUser } from "../../actions/authActions";
 
-import {Row, Col, Navbar, Nav, NavDropdown, Form, FormControl, Button} from 'react-bootstrap'
+import {Button} from 'react-bootstrap'
 
 class Dashboard extends Component {
   onLogoutClick = e => {
@@ -24,7 +23,7 @@ class Dashboard extends Component {
               <b>Hey there,</b> {user.name.split(" ")[0]}
               <p>
                 You are logged into a full-stack{" "}
-                <span style={{ fontFamily: "monospace" }}>MERN</span> app 👏
+                <span>MERN</span> app 👏
               </p>
             </h4>
             <Button

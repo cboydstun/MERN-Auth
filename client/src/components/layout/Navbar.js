@@ -1,6 +1,6 @@
-import React, { Component, useState } from "react";
+import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import {Row, Col, Navbar, Nav, NavDropdown, Form, FormControl, Button} from 'react-bootstrap'
+import {Navbar, Nav} from 'react-bootstrap'
 
 import "./Navbar.css";
 
@@ -13,6 +13,7 @@ class NavBar extends Component {
             <Navbar.Brand  href="/">Chris Boydstun: Full Stack Developer</Navbar.Brand>
             <Navbar.Toggle   aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
+            <Nav className="mr-auto">
             <Link
               to="/"
               className="col s5 center black-text"
@@ -52,8 +53,10 @@ class NavBar extends Component {
             >
               LOGIN
             </Link>
+            </Nav>
             </Navbar.Collapse>
-          </Navbar>            
+          </Navbar>
+                      
             </div>
 
     );
