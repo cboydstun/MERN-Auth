@@ -16,6 +16,7 @@ class Navbar extends Component {
               to="/"
               className="s5 center black-text"
               id="navBarLink"
+              color="white"
             >
               CHRIS BOYDSTUN: Full Stack Developer
             </Link>

@@ -14,15 +14,36 @@ container{
 }
 
 #navBar {
-    background-color: lightgrey;
-    display: flex;    
+    background-color: steelblue;
+    color: white;
+    display: flex;
+    font-size: 1.5rem;    
     width: 900px;
 
 }
 
 #navBarLink {
-    text-align: center;
-    font-size: 10px;
-    color: lightgrey;
 
+    text-align: center;
+    font-size: 1rem;
+    color: white;
+
+}
+
+@media screen and (max-width: 800px) {
+  #navBar{
+      font-size:1rem;
+  }
+  #navBarLink  {
+      font-size:.75rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #navBar{
+      font-size:0.5rem;
+  }
+  #navBarLink  {
+      font-size:0.5rem;
+  }
 }
