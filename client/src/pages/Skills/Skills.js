@@ -12,6 +12,13 @@ import BootIcon from './Images/Bootstrap.png'
 import RouterIcon from './Images/ReactRouter.png'
 import FontAwesomeIcon from './Images/FontAwesome.png'
 import OpenGraphIcon from './Images/OpenGraph.png'
+import MongoIcon from './Images/Mongo.png'
+import ExpressIcon from './Images/Express.png'
+import ReduxIcon from './Images/Redux.png'
+import HerokuIcon from './Images/Heroku.png'
+import JWTIcon from './Images/JWT.png'
+
+
 
 import './Skills.css'
 
@@ -63,6 +70,21 @@ class Skills extends React.PureComponent {
                                 </Col>
                                 <Col>
                                     <Image className="icon" src={OpenGraphIcon} fluid title="Open Graph"/>
+                                </Col>
+                                <Col>
+                                    <Image className="icon" src={MongoIcon} fluid title="MongoDB"/>
+                                </Col>
+                                <Col>
+                                    <Image className="icon" src={ReduxIcon} fluid title="Redux"/>
+                                </Col>
+                                <Col>
+                                <Image className="icon" src={ExpressIcon} fluid title="Express"/>
+                                </Col>
+                                <Col>
+                                <Image className="icon" src={HerokuIcon} fluid title="Heroku"/>
+                                </Col>
+                                <Col>
+                                <Image className="icon" src={JWTIcon} fluid title="JSON Web Token"/>
                                 </Col>
                             </Row>
                         </div>
