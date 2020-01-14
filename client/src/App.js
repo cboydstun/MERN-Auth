@@ -6,6 +6,7 @@ import { setCurrentUser, logoutUser } from "./actions/authActions";
 import { Provider } from "react-redux";
 import store from "./store";
 
+import HeaderTest from "./components/Header/HeaderTest.js"
 import Header from './components/Header/Header.js'
 import Routes from './components/Routes/Routes.js'
 

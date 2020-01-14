@@ -3,6 +3,12 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import Navbar from "../layout/Navbar";
 
+import Header from "../Header/Header.js"
+import HeaderTest from "../Header/HeaderTest.js"
+
+import PrivateHeader from "../Header/PrivateHeader.js"
+import PublicHeader from "../Header/PublicHeader.js"
+
 import Bio from '../../pages/Bio/Bio';
 import Skills from '../../pages/Skills/Skills';
 import Projects from '../../pages/Projects/Projects';
@@ -15,34 +21,31 @@ import Login from "../auth/Login.js";
 import PrivateRoute from "../private-route/PrivateRoute";
 import Dashboard from "../dashboard/Dashboard";
 
-const Routes = () => (
-  // <Switch>
-  //   <Route exact path="/" component={Bio} />
-  //   <Route path="/Skills" component={Skills} />
-  //   <Route path="/Projects" component={Projects} />
-  //   <Route path="/Users" component={Users} />
-  //   <Route path="/Articles" component={Articles} />
-  // </Switch>
-  <React.Fragment>
 
-  <Router>
-    <div>
-      <Navbar/>
-      <div>
-        <Route exact path="/" component={Bio} />
-        <Route exact path="/landing" component={Landing} />
-        <Route exact path="/register" component={Register} />
-        <Route exact path="/login" component={Login} />
-        <Route path="/Skills" component={Skills} />
-        <Route path="/Projects" component={Projects} />
-        <Route path="/Users" component={Users} />
-        <Route path="/Articles" component={Articles} />
-        <Switch>
-          <PrivateRoute exact path="/dashboard" component={Dashboard} />
-        </Switch>
-      </div>
-    </div>
-  </Router>
+
+const Routes = () => (
+  <React.Fragment>
+    <Router>
+        <div>
+          <Navbar />
+          <div>
+            <Switch>
+              <Route exact path="/" component={Bio} />
+              <Route exact path="/landing" component={Landing} />
+              <Route exact path="/register" component={Register} />
+              <Route exact path="/login" component={Login} />
+              <Route path="/Skills" component={Skills} />
+              <Route path="/Projects" component={Projects} />
+
+              {/* <PrivateRoute component={PrivateHeader} /> */}
+
+              <PrivateRoute exact path="/dashboard" component={Dashboard} />
+              <PrivateRoute path="/Users" component={Users} />
+              <PrivateRoute path="/Articles" component={Articles} />
+            </Switch>
+          </div>
+        </div>
+    </Router>
   </React.Fragment>
 );
 

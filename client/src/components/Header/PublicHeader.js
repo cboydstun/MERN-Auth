@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import {Row, Col} from 'react-bootstrap'
 
-import "./Navbar.css";
+import "./Header.css";
 
 class Navbar extends Component {
   render() {
@@ -14,18 +14,12 @@ class Navbar extends Component {
             <Row>
             <Link
               to="/"
-              className="s5 center black-text"
-              id="navBarLink"
-            >
-              CHRIS BOYDSTUN: Full Stack Developer
-            </Link>
-            <Link
-              to="/"
               className="col s5 center black-text"
               id="navBarLink"
             >
               HOME
             </Link>
+
             <Link
               to="/Skills"
               className="col s5 center black-text"
@@ -42,6 +36,8 @@ class Navbar extends Component {
             >
               PROJECTS
             </Link>
+
+
             <Link
               to="/register"
               className="col s5 center black-text"
@@ -70,3 +66,4 @@ class Navbar extends Component {
 }
 
 export default Navbar;
+
