@@ -1,0 +1,26 @@
+#bioBox {
+    display: inline-block;
+}
+
+hr {
+    border: .5px solid lightgray;
+}
+
+h1 {
+    text-align: left;
+    margin-left: .5rem;
+}
+
+.icon {
+    max-height: 100px;
+    min-height: 100px;
+    max-width: 100px;
+    min-width: 100px;
+    margin: .5rem;
+}
+
+/* @media screen and (max-width: 640px) {
+    #node {
+        padding-top: .5rem;
+    }
+} */

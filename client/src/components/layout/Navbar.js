@@ -1,27 +1,66 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import {Navbar, Nav} from 'react-bootstrap'
 
-class Navbar extends Component {
+import "./Navbar.css";
+
+class NavBar extends Component {
   render() {
     return (
-      <div className="navbar-fixed">
-        <nav className="z-depth-0">
-          <div className="nav-wrapper white">
+      <div  >
+
+          <Navbar id="navBar" expand="lg" sticky="top">
+            <Navbar.Brand  href="/">Chris Boydstun: Full Stack Developer</Navbar.Brand>
+            <Navbar.Toggle   aria-controls="basic-navbar-nav" />
+            <Navbar.Collapse id="basic-navbar-nav">
+            <Nav className="mr-auto">
             <Link
               to="/"
-              style={{
-                fontFamily: "monospace"
-              }}
-              className="col s5 brand-logo center black-text"
+              className="col s5 center black-text"
+              id="navBarLink"
             >
-              <i className="material-icons">code</i>
-              MERN
+              HOME
             </Link>
-          </div>
-        </nav>
-      </div>
+            <Link
+              to="/Skills"
+              className="col s5 center black-text"
+              id="navBarLink"
+
+            >
+              SKILLS
+            </Link>
+            <Link
+              to="/Projects"
+              className="col s5 center black-text"
+              id="navBarLink"
+
+            >
+              PROJECTS
+            </Link>
+            <Link
+              to="/register"
+              className="col s5 center black-text"
+              id="navBarLink"
+
+            >
+              REGISTER
+            </Link>
+            <Link
+              to="/login"
+              className="col s5 center black-text"
+              id="navBarLink"
+
+            >
+              LOGIN
+            </Link>
+            </Nav>
+            </Navbar.Collapse>
+          </Navbar>
+                      
+            </div>
+
     );
   }
 }
 
-export default Navbar;
+export default NavBar;

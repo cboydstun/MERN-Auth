@@ -1,0 +1,32 @@
+main {
+  align-content: center;
+  box-sizing: border-box;
+  /* display: grid; */
+  font-family: 'SF Pro Text', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica',
+    'Arial', sans-serif;
+  hyphens: auto;
+  line-height: 1.65;
+  margin: 0 auto;
+  max-width: 900px;
+  min-height: 100vh;
+  padding: 20px 0;
+  text-align: center;
+}
+h1 {
+  font-size: 45px;
+}
+h2 {
+  margin-top: 1.5em;
+}
+p {
+  font-size: 16px;
+}
+/* a {
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.2s ease;
+} */
+/* a:hover {
+  border-bottom: 1px solid #0076ff;
+} */
+
