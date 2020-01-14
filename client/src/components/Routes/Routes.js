@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import Navbar from "../layout/Navbar";
+import NavbarTest from "../layout/NavbarTest";
 
 import Header from "../Header/Header.js"
 import HeaderTest from "../Header/HeaderTest.js"
@@ -31,9 +32,9 @@ const Routes = () => (
           <div>
             <Switch>
               <Route exact path="/" component={Bio} />
-              <Route exact path="/landing" component={Landing} />
-              <Route exact path="/register" component={Register} />
-              <Route exact path="/login" component={Login} />
+              <Route path="/landing" component={Landing} />
+              <Route path="/register" component={Register} />
+              <Route path="/login" component={Login} />
               <Route path="/Skills" component={Skills} />
               <Route path="/Projects" component={Projects} />
 

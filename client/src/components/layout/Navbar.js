@@ -1,25 +1,18 @@
-import React, { Component } from "react";
+import React, { Component, useState } from "react";
 import { Link } from "react-router-dom";
-import {Row, Col} from 'react-bootstrap'
+import {Row, Col, Navbar, Nav, NavDropdown, Form, FormControl, Button} from 'react-bootstrap'
 
 import "./Navbar.css";
 
-class Navbar extends Component {
+class NavBar extends Component {
   render() {
     return (
-      <div className="navbar-fixed" id="container" >
-        <nav id="navBar">
-          <div className="nav-wrapper">
-            <Col>
-            <Row>
-            <Link
-              to="/"
-              className="s5 center black-text"
-              id="navBarLink"
-              color="white"
-            >
-              CHRIS BOYDSTUN: Full Stack Developer
-            </Link>
+      <div  >
+
+          <Navbar id="navBar" expand="lg" sticky="top">
+            <Navbar.Brand  href="/">Chris Boydstun: Full Stack Developer</Navbar.Brand>
+            <Navbar.Toggle   aria-controls="basic-navbar-nav" />
+            <Navbar.Collapse id="basic-navbar-nav">
             <Link
               to="/"
               className="col s5 center black-text"
@@ -59,15 +52,12 @@ class Navbar extends Component {
             >
               LOGIN
             </Link>
-            </Row>
-            </Col>
-          </div>
+            </Navbar.Collapse>
+          </Navbar>            
+            </div>
 
-        </nav>
-        
-      </div>
     );
   }
 }
 
-export default Navbar;
+export default NavBar;

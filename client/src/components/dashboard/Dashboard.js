@@ -5,6 +5,8 @@ import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { logoutUser } from "../../actions/authActions";
 
+import {Row, Col, Navbar, Nav, NavDropdown, Form, FormControl, Button} from 'react-bootstrap'
+
 class Dashboard extends Component {
   onLogoutClick = e => {
     e.preventDefault();
@@ -25,28 +27,24 @@ class Dashboard extends Component {
                 <span style={{ fontFamily: "monospace" }}>MERN</span> app 👏
               </p>
             </h4>
-            <button
+            <Button
               onClick={this.onLogoutClick}
               className="btn btn-large waves-effect waves-light hoverable blue accent-3"
             >
               Logout
-            </button>
-            <Link
-              to="/Articles"
-              className="col s5 center black-text"
-              id="navBarLink"
-
+            </Button>
+            <Button
+              href="/Articles"
+              className="btn btn-large waves-effect waves-light hoverable blue accent-3"
             >
               Articles
-            </Link>
-            <Link
-              to="/Users"
-              className="col s5 center black-text"
-              id="navBarLink"
-
+            </Button>
+            <Button
+              href="/Users"
+              className="btn btn-large waves-effect waves-light hoverable blue accent-3"
             >
               Users
-            </Link>
+            </Button>
           </div>
         </div>
       </div>
