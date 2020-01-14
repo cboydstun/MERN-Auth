@@ -1,6 +1,6 @@
 # mern-auth
 
-[Deployed](https://boydstun-react-portfolio.herokuapp.com/Articles)
+[Deployed Link](https://boydstun-react-portfolio.herokuapp.com/)
 
 Full-stack MERN app Portfolio with authentication using passport and JWTs.
 
